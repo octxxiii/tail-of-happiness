@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { AppProvider } from './context/AppContext';
 import ArtisticAppDemo from './components/ArtisticAppDemo';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <AppProvider>
       <ArtisticAppDemo />
-    </div>
+    </AppProvider>
   );
 }
 
